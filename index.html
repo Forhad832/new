@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}.text-right{
+    text-align: right;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-content{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-section{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+.headerlogo{
+    width: 30%;
+}
+.logo {
+	max-width: 42px;
+	height: auto;
+	float: left;
+	margin-right: 12px;
+	margin-top: 5px;
+   
+}
+span {
+    font-size: 27px;
+    margin-top: 7px;
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+}
+.header-menu{
+    width: 56%;
+}
+.header-btn {
+    position: relative;
+    top: 14px;
+    border: 2px solid #6278DF;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6278DF;
+    margin-left: 30px;
+}
+.header-btn:hover{
+    background-color: #6278DF;
+    color: white;
+    transition: 0.3s;
+}
+.header-menu.left {
+    margin-left: 132px;
+}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 54px;
+    color: rgb(39, 38, 38);
+    margin-left: 20px;
+}
+
+.banner-section {
+    background: url(images/banner.jpg);
+    padding: 200px 0;
+    max-width: 100%;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+.banner-content h3 {
+    margin-bottom: 19px;
+    font-size: 20px;
+    color: #fff;
+}
+.banner-content h2 {
+    font-size: 56px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.default-btn {
+    background-color: #fff;
+    color: gray;
+    padding: 10px 28px;
+    margin-right: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.default-btn .fa{
+    margin-right: 16px;
+}
+.default-btn:hover{
+    background-color: #6278DF; 
+    color: #fff;
+}
+.entertain-section {
+    margin-top: 100px;
+}
+.video.left {
+    width: 580px;
+    margin-right: 50px;
+}
+
+.video-content h3 {
+    font-size: 50px;
+}
+.video-content p {
+    font-size: 19px;
+    color: gray;
+    line-height: 1.6em;
+}
+
+.service-section{
+    padding: 100px 0;
+}
+
+.service-content h2{
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-content h3 {
+    font-size: 30px;
+    color: gray;
+}
+.services-items{
+    padding: 100px 0;
+}
+.service-item{
+    width: 30%;
+    margin-bottom: 0;
+}
+.service-item.left {
+    margin: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px #e4e1e1;
+ 
+}
+.service-item h3 {
+	font-size: 20px; 
+}
+.service-item p {
+	margin-top: 20px;
+	font-size: 15px;
+	line-height: 26px;  
+}
+.s-icon {
+	font-size: 51px;
+	float: left;
+	min-height: 100px;
+	margin-right: 20px;
+}
+.service-item:hover{
+    background: #fff;
+    transition: 0.4s;
+    transform: scale(.98);
+}
+
+.price-section{
+   
+   background: rgb(255, 253, 253);
+}
+
+.price-title h2 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 23px;
+}
+.price-title p {
+    font-size: 24px;
+    font-weight: 400px;
+    font-weight: 400;
+    color: rgb(143, 140, 140);
+    margin-bottom: 30px;
+}
+.price-heading {
+    border-radius: 10px 10px 0 0;
+    padding-left: 48px;
+}
+.price-heading:hover{
+    background: #6278DF;
+}
+.price-heading h2 {
+    font-size: 60px;
+    margin-bottom: 52px;
+    font-weight: bold;
+}
+.price-heading h3 {
+	padding: 29px 0;
+	font-size: 30px;
+}
+.price-heading h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.price-heading p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.price-item {
+    width: 31%;
+    margin-left: 2%;
+    background-color: #fff;
+    margin-top: 60px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.2);
+    border-radius: 10px;
+    margin-bottom: 140px;
+}
+.price-item:nth-child(3){
+    margin-right: 0;
+}
+.price-item span{
+    font-size: 20px;
+}
+.price-item ul li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding-left: 48px;
+}
+.price-item:hover .price-heading{
+    background: #6278DF;
+    color: #fff;
+}
+.price-item:hover .default-btn{
+    background:  #6278DF;
+    color: #fff;
+}
+.check-icon{
+    font-size: 25px;
+    color:  #6278DF;
+    margin-right: 15px;
+}
+.price-btn {
+	text-align: center;
+   
+	padding-bottom: 30px;
+	padding-right: 18px;
+}
+
+.team-section{
+   padding: 50px 0;
+}
+.team-content  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.team-member{
+   margin-top: 50px;
+}
+.member {
+    width: 23%;
+    margin: 11px;
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.1);
+    border-radius: 3px;
+    margin-right: 12px;
+}
+.member img {
+	max-width: 100%;
+	border-radius: 5px 5px 0 0;
+	
+}
+
+.member-bio {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.member-bio h4 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.member-bio p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.member:hover{
+   background: #fff;
+   box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.3);
+}
+.newsletter-section{
+    margin-top: 100px;
+}
+.newsletter-content h2 {
+    font-size: 43px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+.newsletter-content h3 {
+    font-size: 20px;
+    font-weight: 40;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+.deafult-input-btn {
+    padding: 14px 60px;
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.deafult-input-btn:focus{
+    outline: none;
+}
+.deafult-input-btn:focus-within{
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.5);
+    border: 1px solid #6278Df;
+}
+.sub-btn {
+    padding: 14px 62px;
+    margin-right: 41px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #6278DF;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #6278DF ;
+    display: inline-block;
+    cursor: pointer;
+   transition: 0.4s;
+}
+.sub-btn:hover{
+    background: #fff;
+    border: 2px solid #6278DF transparent;
+    color: #6278DF;
+}
+.content-section{
+    margin-top: 200px;
+}
+
+.new-head{  width: 50%;
+
+}
+.new-head h2 {
+    margin-left: 66px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.new-head p {
+    margin-left: 50px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.bio-content-title{
+   margin-top: 100px;
+}
+.bio-content{
+    width: 25%;
+}
+
+.bio-pic{
+    margin-left: 15px;
+}
+.bio-title:hover{
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.3);
+}
+.bio-title {
+    padding: 35px 35px;
+}
+.bio-title h2 {
+   margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.bio-title p {
+  
+    font-size: 21px;
+    font-weight: 40;
+    letter-spacing: 0px;
+}
+
+/* application-section */
+.app-content {
+    margin-top: 99px;
+}
+.app-content h2 {
+    font-size: 44px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+.app-content h3 {
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.testimonial-section{
+    padding: 100px 0;
+}
+
+.test-content{
+    width: 30%;
+    margin-left: 30px;
+}
+.test-content:nth-child(3){
+    margin-right: 0;
+}
+.t-content{
+    position: relative;
+    margin-bottom: 50px;
+}
+.fa-quote-left {
+    font-size: 66px;
+    position: absolute;
+    opacity: .2;
+    margin-top: -15px;
+    margin-left: -17px;
+}
+.t-content::after{
+    content: "";
+    position: absolute;
+    bottom: -17px;
+   left: 170px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 16px 0 15px;
+    border-color: #fff transparent transparent transparent;
+
+}
+.t-content:hover{
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.2);
+}
+.t-content p {
+    font-size: 22px;
+    font-weight: 30;
+    padding: 34px 31px;
+    box-sizing: border-box;
+    line-height: 2em;
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(134, 150, 218, 0.3);
+   
+}
+.t-content p::before{
+    content: "";
+    font-family: fontawsome;
+    font-size: 40px;
+}
+.user-pic{
+    max-width: 200px;
+    margin: auto;
+}
+.user-pic img{
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.user-t h4 {
+    font-size: 20px;
+    margin-bottom: 19px;
+}
+.user-t span {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.map-contact{
+    margin-bottom: 40px;
+}
+.map{
+    width: 48%;
+   
+    margin-left: 20px;
+}
+.map h3 {
+    margin-top: 45px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.map p {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.w100 {
+    width: 91.5%;
+    height: 65px;
+    font-size: 20px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 1px solid#dedfe2;
+    margin-bottom: 50px;
+}
+.w50 {
+    width: 255px;
+    height: 65px;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #dedfe2;
+    margin-bottom: 50px;
+}
+.w100:focus{
+    outline: none;
+   
+}
+.w100:focus-within{
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.5);
+    border: 1px solid #6278Df;
+   
+}
+.w50:focus{
+    outline: none;
+   
+}
+.w50:focus-within{
+    box-shadow: 3px 4px 30px 0 rgba(105, 114, 156, 0.5);
+    border: 1px solid #6278Df;
+   
+}
+textarea {
+    width: 556px;
+    height: 97px;
+    padding: 35px 20px;
+    font-size: 23px;
+    border-radius: 5px;
+    border: 1px solid#dedfe2;
+}
+textarea:focus{
+    outline: none;
+}
+textarea:focus-within{
+    box-shadow: 3px 4px 30px 0 rgba(18, 60, 245, 0.5);
+    border: 1px solid #2448eb;
+}
+.default-button {
+    padding: 20px 271px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 2px solid #6278DF;
+    font-size: 20px;
+    font-weight: 00;
+    background: #6278DF;
+    color: #fff;
+    transition: 0.4s;
+}
+.default-button:hover{
+    background: #fff;
+    color: #6278DF;
+    border: 2px solid #6278DF;
+}
+.footer span {
+    font-size: 23px;
+    margin-top: 20px;
+}
+@media (max-width:1399px){
+    .mid-content{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    span {
+        font-size: 23px;
+    }
+  
+}
+
+
+@media (max-width:1299px){
+    span {
+        font-size: 23px;
+        margin-top: 9px;
+       
+    }
+ 
+    .primary-menu ul li a {
+        padding: 0 12px;
+        margin-left: 20px;
+
+    }
+    .header-menu {
+        width: 50%;
+    }
+    
+    .header-btn {
+       margin-left: 100px;
+        padding: 4px 8px;
+    }
+    .banner-section {
+      
+        padding: 190px 0;
+        
+    }
+    .service-item.left {
+        margin: 17px;
+    }
+    .forhad-pic {
+      
+        height: 272px;
+    }
+    .video-content h3 {
+        font-size: 40px;
+    }
+    .video-content p {
+        font-size: 16px;
+        margin-top: 23px;
+    }
+    .service-item p {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .member {
+        margin: 9px;
+    }
+    .bio-title {
+        padding: 28px 35px;
+    }
+    
+ 
+}
+@media (max-width:1199px){
+    .header-btn {
+       
+        padding: 4px 8px;
+    }
+
+    .primary-menu ul li a {
+        padding: 0 8px;
+        margin-left: 15px;
+    }
+    .header-menu.left {
+        margin-left: 30px;
+    }
+    .banner-section {
+        padding: 174px 0;
+    }
+    .banner-content h3 {
+        margin-bottom: 17px;
+        font-size: 22px;
+       
+    }
+    .banner-content h2 {
+        font-size: 47px;
+        margin-bottom: 37px;
+    }
+    .forhad-pic {
+        height: 255px;
+    }
+    .video-content h3 {
+        font-size: 24px;
+    }
+    .video-content p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .forhad-pic {
+        height: 255px;
+    }
+    .bio-title {
+        padding: 4px 35px;
+    }
+   
+}
+.primary-menu span{
+    display: none;
+   
+}
+.mobile-menu{
+    display: none;
+}
+@media(max-width:1090px){
+    .service-item {
+        width: 45%;
+    }
+  
+  
+    .bio-title p {
+        font-size: 18px;
+    }
+    .member-bio p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    .map {
+        width: 100%;
+       margin: 0;
+    }
+    .mobile-menu {
+	display: none;
+}
+ 
+}
+
+@media (max-width:992px){
+    span {
+        font-size: 20px;
+        position: relative;
+        top: -12px;
+    }
+    .header-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .logo  {
+        float: none;
+    }
+  
+   
+    .header-menu {
+        width: 100%;
+    }
+    .header-btn {
+        position: absolute;
+        right: 27px;
+        top: 50px;
+        text-align: right;
+    }
+  
+    .header-section {
+        position: relative;
+    }
+    .primary-menu {
+	margin-bottom: 21px;
+}
+.mobile-menu {
+	display: block;
+}
+    .primary-menu span {
+        
+        top: 16px;
+        
+    }
+    .banner-section {
+        width: 100%;
+        padding: 98px 0;
+       
+    }
+    .banner-content.text-center h3 {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    .banner-content h2 {
+        font-size: 35px;
+    }
+    .default-btn {
+        padding: 10px 16px;  
+    }
+    .video.left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .video-content {
+        width: 100%;
+    }
+    .service-content h2 {
+        font-size: 39px;
+        font-weight: 500;
+    }
+  
+    .service-content h3 {
+        font-size: 25px;
+    }
+    .price-title h2 {
+        font-size: 38px;
+    }
+    .price-title p {
+        font-size: 18px;
+    }
+    .price-heading h3 {
+        font-size: 24px;
+    }
+    .price-heading h2 {
+        font-size: 46px;
+        margin-bottom: 40px;
+    }
+    .price-item span {
+        font-size: 17px;
+    }
+    .price-heading h4 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .price-heading p {
+        font-size: 19px;
+        margin-bottom: 35px;
+    }
+    .price-item ul li {
+        font-size: 19px;
+    }
+    .check-icon {
+        font-size: 19px;
+    }
+ .member {
+	width: 47%;
+	margin-bottom: 36px;
+}
+.forhad-pic {
+	height: 421px;
+}
+    .test-content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .bio-content {
+        width: 100%;
+    }
+    .bio-title h2 {
+        margin-bottom: 20px;
+    }
+    .bio-title p {
+        font-size: 16px;
+    }
+ 
+    .bio-title {
+        padding: 37px 35px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .map {
+        width: 100%;
+       margin: 0;
+    }
+    .bio-content.left.bbb {
+        margin-top: 30px;
+    }
+
+    .primary-menu ul  {
+
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+    }
+    .primary-menu .mobile-menu:checked ~ ul{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+    .primary-menu ul li {
+        display: block;
+    }
+    .primary-menu ul li:hover{
+        background: rgb(206, 202, 202);
+      
+    }
+    .mobile-menu {
+        width: 39px;
+        height: 17px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .primary-menu span {
+	display: block;
+	position: absolute;
+	top: 43px;
+	left: 46px;
+	pointer-events: none;
+	font-size: 30px;
+}
+}
+
+@media (max-width:850px){
+    .forhad-pic {
+        height: 329px;
+    }
+
+@media(max-width:768px){
+    .logo {
+	width: 100%;
+}
+    span {
+        position: relative;
+        top: -11px;
+        font-size: 20px;
+    }
+    .header-logo.left {
+        width: 100%;
+        text-align: center;
+    }
+    .logo {
+        float: none;
+    }
+    .header-btn {
+        position: absolute;
+        top: 46px;
+       
+    }
+    .header-menu.left {
+        margin-left: 0;
+    }
+    .header-section {
+        position: relative;
+    }
+    .primary-menu ul li a {
+        padding: 0 7px;
+        font-size: 15px;
+      
+    }
+    .banner-section {
+        padding: 65px 0; 
+        width: 100%;
+    }
+    .service-content h2 {
+        font-size: 34px;
+    }
+    .service-content h3 {
+        font-size: 20px;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .service-item.left {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .price-item {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+    .member {
+        width: 100%;
+    }
+    .member img {
+	
+	width: 100%;
+}
+.bio-pic {
+	
+	width: 100%;
+}
+    .forhad-pic {
+        height:427px;
+    }
+    .team-content h2 {
+        font-size: 29px;
+        font-weight: 500;
+    }
+    .deafult-input {
+        padding: 14px 70px;
+        margin-bottom: 30px;
+    }
+    .bio-content {
+        width: 100%;
+    }
+    .bio-content.left.bbb {
+        margin-top: 30px;
+    }
+    .map {
+        width: 100%;
+       margin: 0;
+    }
+    .deafult-input {
+        padding: 6px 13px;
+    }
+    textarea {
+        width: 472px;
+    }
+    .default-button {
+        padding: 20px 233px;
+    }
+    .footer span {
+        font-size: 14px;
+    }
+    .deafult-input-btn {
+        padding: 14px 60px;
+        margin-right: 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:575px){
+    .primary-menu ul li a {
+        font-size: 15px;
+        padding: 2px;
+    }
+    .primary-menu span {
+	position: absolute;
+	left: 30px;
+}
+    .header-btn {
+        position: absolute;
+        right: 28px;
+        top: 47px;
+    }
+    .default-btn {
+        display: block;
+        width: 95%;
+        font-size: 14px;
+        margin-bottom: 12px;
+        margin-left: 0px;
+    }
+    .default-btn {
+        padding: 8px 16px;
+        margin-top: 17px;
+    }
+    .banner-section {
+        padding: 70px 0;
+    }
+    .banner-content h2 {
+        font-size: 29px;
+        margin-bottom: 8px;
+    }
+    .banner-content.text-center h3 {
+        font-size: 14px;
+        margin-top: 28px;
+    }
+    .service-content h2 {
+        font-size: 24px;
+    }
+    .service-content h3 {
+        font-size: 18px;
+    }
+    .price-title h2 {
+        font-size: 28px;
+    }
+    .price-title h2 {
+        font-size: 28px;
+    }
+    .member {
+        width: 100%;
+    }
+    .member img {
+	width: 100%;
+	height: 300px;
+}
+    .newsletter-section {
+        margin-top: 12px;
+    }
+    .newsletter-content h3 {
+        font-size: 14px;
+    }
+    .newsletter-content h2 {
+        font-size: 31px;
+    }
+    .deafult-input {
+        padding: 14px 70px;
+        margin-bottom: 30px;
+    }
+    .new-head {
+        width: 100%;
+        margin-bottom: 38px;
+        margin-left: 25px;
+    }
+    .new-head h2 {
+        margin-left: 0;
+        font-size: 40px;
+     
+    }
+    .new-head p {
+        margin-left: 0;
+        font-size: 16px;
+      
+    }
+    .forhad-pic {
+        width: 100%;
+        height: 310px;
+    }
+    .deafult-input {
+        padding: 0px 4px;
+    }
+    textarea {
+        width: 342px;
+        height: 38px;
+    }
+    .default-button {
+        padding: 20px 168px;
+    }
+    .deafult-input-btn {
+        padding: 14px 60px;
+        margin-right: 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    
+    @media (max-width:420px){
+        .banner-section {
+	padding: 61px 0;
+	max-width: 100%;
+}
+.logo {
+	max-width: 43px;
+	height: 43px;
+}
+.member img {
+	max-width: 100%;
+	height: 310px;
+}
+        .default-btn {
+	padding: 6px 6px;
+    margin-left: 10px;
+}
+        .new-head h2 {
+	margin-left: 0;
+	font-size: 29px;
+}
+.service-item.left {
+
+	padding: 34px;
+
+}
+.user-pic img {
+	width: 61px;
+}
+.user-t h4 {
+	font-size: 17px;
+}
+.user-t span {
+	font-size: 15px;
+
+}
+        .new-head p {
+	margin-left: 0;
+	font-size: 15px;
+}
+        .app-content h2 {
+	     font-size: 17px;
+	
+   }
+        .app-content h3 {
+	    font-size: 16px;
+	
+    }
+    .map p {
+	font-size: 16px;
+     }
+     textarea {
+	width: 90%;
+	height: 38px;
+	margin-left: 0;
+	
+}
+.header-btn {
+	position: absolute;
+	top: 66px;
+}
+.t-content p {
+	font-size: 15px;
+}
+.default-button {
+	padding: 20px 123px;
+}
+.service-content h3 {
+	font-size: 13px;
+}
+.service-content h2 {
+	font-size: 18px;
+}
+.deafult-input-btn {
+	padding: 14px 24px;
+}
+.sub-btn {
+	padding: 14px 62px;
+	margin-right: 2px;
+}
+.w50 {
+	width: 200px;
+    font-size: 16px;
+}
+.deafult-input {
+	padding: 0px 4px;
+	font-size: 16px;
+}
+
+.footer span {
+	font-size: 9px;
+}
+
+.team-content h2 {
+	font-size: 16px;
+}
+	
+.primary-menu span {
+	position: absolute;
+	right: 13px;
+	top: 54px;
+}
+
+    }  
+    
+}
+  
+}
+    </style>
+</head>
+<body>
+   <div class="header-section clear">
+       <div class="mid-content">
+           <div class="header-logo left">
+               <a href="">
+                   <img class="logo" src="images/logo (1).png" alt="">
+                   <span>AppAMP Theme</span>
+               </a>
+           </div>
+           <div class="header-menu left">
+               <div class="primary-menu">
+                   <input type="checkbox" class="mobile-menu">
+                   <span class="mobile-menu-icon"> <i class="fa fa-bars" aria-hidden="true"></i>
+                   </span>
+                   <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About us</a></li>
+                       <li><a href="#">Service</a></li>
+                       <li><a href="#">Products</a></li>
+                       <li><a href="#">Contact</a></li>
+
+                   </ul>
+               </div>
+           </div>
+           <div class="header-button left">
+               <a class="header-btn" href="">Buy Now</a>
+           </div>
+       </div>
+   </div>
+   <div class="banner-section">
+       <div class="mid-content">
+           <div class="banner-content text-center">
+               <h3>Created to save your time</h3>      
+               <h2>Time Planner App</h2>  
+               <a class="default-btn" href="#"><i class="fa fa-android"></i>Google Play</a>
+               <a class="default-btn" href="#"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a> 
+           </div>
+       </div>
+       
+   </div>
+   <div class="entertain-section">
+       <div class="mid-content">
+           <div class="video left">
+            <iframe width="100%" height="319" src="https://www.youtube.com/embed/7MnP25BL-wI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="video-content">
+               <h3>Watch a video on how to use our app   </h3>
+               <p>It’s not just about recording employee hours. It’s about understanding employee availability. It’s about hitting project deadlines — while staying on budget. It’s knowing you’ll never have to update another Excel spreadsheet. It’s about making things easy. It’s giving your team the tools they need to do their jobs well. And the insights to work more effectively than ever before.
+
+            </p>
+           </div>
+       </div>
+   </div>
+   <div class="service-section clear">
+       <div class="mid-content">
+           <div class="service-content text-center">
+               <h2>Learn more about our application</h2>
+               <h3>Track time without wasting a second </h3>
+           </div>
+           <div class="services-items">
+               <div class="service-item left">
+                <i class="fa fa-laptop s-icon" aria-hidden="true"></i>
+
+                   <h3>Time Tracking </h3>
+                   <p>Accurate and simple time Task-based estimation</p>
+               </div>
+               <div class="service-item left">
+                <i class="fa fa-laptop s-icon" aria-hidden="true"></i>
+
+                <h3>Time Tracking </h3>
+                <p>Accurate and simple time Task-based estimation</p>  
+            </div>
+            <div class="service-item left">
+                <i class="fa fa-laptop s-icon" aria-hidden="true"></i>
+
+                <h3>Time Tracking </h3>
+                <p>Accurate and simple time Task-based estimation</p>
+            </div>
+            <div class="service-item left">
+                <i class="fa fa-laptop s-icon" aria-hidden="true"></i>
+
+                <h3>Time Tracking </h3>
+                  <p>Accurate and simple time  Task-based estimation</p>
+            </div>
+            <div class="service-item left">
+                <i class="fa fa-laptop s-icon" aria-hidden="true"></i>
+
+                <h3>Time Tracking </h3>
+                <p>Accurate and simple time Task-based estimation</p>
+            </div>
+            <div class="service-item left">
+                <i class="fa fa-laptop s-icon" aria-hidden="true"></i>
+
+                <h3>Time Tracking </h3>
+                <p>Accurate and simple time  Task-based estimation</p>
+            </div>
+           </div>
+       </div>
+   </div>
+   <div class="price-section clear">
+    <div class="mid-content">
+        <div class="price-title text-center">
+            <h2>Start using our app today</h2>
+            <p>Set of tools to seamlessly manage projects during their entire life cycle</p>
+        </div>
+        <div class="price-item-list">
+            <div class="price-item left">
+             <div class="price-heading">
+                 <h3>Free Version</h3>
+                 <h2>$ 0 <span> / month</span> </h2>
+                 <h4>Who is this for?</h4>
+                 <p> Free version for students and regular users</p>
+             </div>
+             <ul>
+                 <li><i class="fa fa-check check-icon" aria-hidden="true"></i>Time Tracking</li>
+                 <li><i class="fa fa-check  check-icon" aria-hidden="true"></i>Resource Planning</li>
+                 <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Integrations </li>
+                 <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Task Management</li>
+                 <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Reporting</li>
+                 <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Invoicing</li>
+             </ul>
+             <div class="price-btn">
+                 <a class="default-btn" href="#">Get Free Now</a>
+             </div>
+            </div>
+            <div class="price-item-list">
+                <div class="price-item left">
+                 <div class="price-heading">
+                     <h3>Free Version</h3>
+                     <h2>$ 0 <span> / month</span> </h2>
+                     <h4>Who is this for?</h4>
+                     <p> Free version for students and regular users</p>
+                 </div>
+                 <ul>
+                     <li><i class="fa fa-check check-icon" aria-hidden="true"></i>Time Tracking</li>
+                     <li><i class="fa fa-check  check-icon" aria-hidden="true"></i>Resource Planning</li>
+                     <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Integrations </li>
+                     <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Task Management</li>
+                     <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Reporting</li>
+                     <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Invoicing</li>
+                 </ul>
+                 <div class="price-btn">
+                     <a class="default-btn" href="#">Get Free Now</a>
+                 </div>
+                </div>
+                <div class="price-item-list">
+                    <div class="price-item left">
+                     <div class="price-heading">
+                         <h3>Free Version</h3>
+                         <h2>$ 0 <span> / month</span> </h2>
+                         <h4>Who is this for?</h4>
+                         <p> Free version for students and regular users</p>
+                     </div>
+                     <ul>
+                         <li><i class="fa fa-check check-icon" aria-hidden="true"></i>Time Tracking</li>
+                         <li><i class="fa fa-check  check-icon" aria-hidden="true"></i>Resource Planning</li>
+                         <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Integrations </li>
+                         <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Task Management</li>
+                         <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Reporting</li>
+                         <li><i class="fa fa-times  check-icon" aria-hidden="true"></i>Invoicing</li>
+                     </ul>
+                     <div class="price-btn ">
+                         <a class="default-btn" href="#">Get Free Now</a>
+                     </div>
+                    </div>
+        </div>
+    </div>
+</div>
+   <div class="team-section ">
+       <div class="mid-content">
+           <div class="team-content text-center">
+               <h2>Our team is constantly trying for you</h2>
+           </div>
+           <div class="team-member clear">
+               <div class="member left">
+                   <img src="images/obi.jpg" alt="">
+                   <div class="member-bio">
+                    <h4>Obi Plabon</h4>
+                    <p>WordPress Poet</p>
+                   </div>
+               </div>
+               <div class="member left">
+                <img src="images/fff.jpg" alt="" class="forhad-pic">
+               <div class="member-bio">
+                <h4>Forhad Hossen</h4>
+                <p>Learning Web Design</p>
+               </div>
+            </div>
+            <div class="member left">
+                <img src="images/oly.jpg" alt="">
+                <div class="member-bio">
+                    <h4>Oly Ullah</h4>
+                <p>VC, East West University</p>
+                </div>
+            </div>
+            <div class="member left">
+                <img src="images/obi.jpg" alt="">
+                <div class="member-bio">
+                    <h4>Obi Plabon</h4>
+                <p>WordPress Poet</p>
+                </div>
+            </div>
+           </div>
+       </div>
+   </div>
+   <div class="newsletter-section">
+       <div class="newsletter-content text-center">
+           <h3>Keep up to date with the latest updates</h3>
+           <h2>Subscribe to our newsletter</h2>
+       </div>
+       <div class="form-newsletter text-center">
+           <form  action="#" >
+               <input type="text" placeholder="E-mail Address" class="deafult-input-btn ">
+               <button type="submit" class="sub-btn">Subscribe</button>
+           </form>
+       </div>
+   </div>
+   <div class="content-section">
+       <div class="mid-content">
+           <div class="new-content clear">
+              <div class="new-head left">
+                <h2>What's new?</h2>
+              </div>
+              <div class="new-head left">
+                <p>Accurate employee time tracking software for reporting, <br> invoicing and painless payroll. Trusted by over 2,000 <br> businesses in more than 70 countries. </p>
+              </div>
+           </div>
+         <div class="bio-content-title clear">
+               <div class="bio-content left ">
+                  <div class="bio-pic">
+                    <img src="images/02.jpg" alt="">
+                  </div>
+               </div>
+               <div class="bio-content left">
+                  <div class="bio-title">
+                    <h2>Reporting</h2>
+                    <p>Highly flexible reports to analyze time the way you want</p>
+                  </div>
+               </div>
+
+         
+              <div class="new-left">
+                <div class="bio-content left bbb">
+                    <div class="bio-pic">
+                      <img src="images/03.jpg" alt="">
+                    </div>
+                 </div>
+                 <div class="bio-content left">
+                    <div class="bio-title">
+                      <h2>Invoicing</h2>
+                      <p>Create invoices from time entries and send them to your clients</p>
+                    </div>
+                 </div>
+              </div>
+       </div>
+   </div>
+
+   <div class="application-section">
+       <div class="mid-content">
+           <div class="app-content text-center">
+               <h3>Feedback from our users</h3>
+               <h2>What do users say about our application</h2>
+           </div>
+       </div>
+   </div>
+
+   <div class="testimonial-section">
+       <div class="mid-content">
+           <div class="testimonial clear">
+
+               <div class="test-content left">
+                    <div class="t-content">
+                     
+                        <p>   <i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                    </div>
+                   <div class="user-pic">
+                       <img src="images/obi.jpg" alt="">
+                   </div>
+                   <div class="user-t">
+                       <h4>Obi Plabon</h4>
+                       <span>User</span>
+                   </div>
+               </div>
+
+               <div class="test-content left">
+                <div class="t-content">
+                   
+                    <p> <i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                </div>
+               <div class="user-pic">
+                   <img src="images/fo.jpg" alt="">
+               </div>
+               <div class="user-t">
+                   <h4>Forhad</h4>
+                   <span>User</span>
+               </div>
+           </div>
+           <div class="test-content left">
+            <div class="t-content">
+               
+                <p>  <i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+            </div>
+           <div class="user-pic">
+               <img src="images/oly.jpg" alt="">
+           </div>
+           <div class="user-t">
+               <h4>Oly Ullah</h4>
+               <span>User</span>
+           </div>
+       </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="contact-section">
+       <div class="mid-content">
+           <div class="map-contact clear">
+                <div class="map left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4030.7304428700536!2d89.41132261925014!3d25.728039305696605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e2d599db791aff%3A0xb52ea6a6ad129436!2sBehur%20Bazar%20-%20Annadanagar%20Rd%2C%20Annadanagar%2C%20Bangladesh!5e1!3m2!1sen!2sus!4v1608390215846!5m2!1sen!2sus" width="100%" height="800px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="map left">
+                        <h3>Contact us</h3>
+                        <p>Contact us if you have any questions and we will contact you. We appreciate user feedback and be sure to take into account your wishes.</p>
+                        <div class="contact-form clear">
+                            <form action="#">
+                                <input type="email" placeholder="E-mail Address" class="w100 deafult-input"> <br>
+                                <input type="text" placeholder="Name" class=" w50 ">
+                                <input type="text" placeholder="Your Phone" class="w50 "><br>
+                                <textarea placeholder="Message"></textarea> <br>
+                                <button type="submit" class="default-button">Send</button>
+                            </form>
+                        </div>
+                </div>
+           </div>
+           <div class="footer text-center">
+               <span>© Copyright 2020 By Forhad Hossen - All Rights Reserved</span>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
